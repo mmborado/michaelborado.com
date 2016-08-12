@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+  <head> 	<!-- The header is just to read metadata about the HTML Document, not the header of the webpage -->
+    <meta charset="utf-8"> <!--tells the browser how the webpage is formatted and how characters are used | universal character set transformation format 8-bit -->
+    <title>Michael Borado | Computer Engineer</title> <!--appears in the tab-->
+    <!--The following tag will link towards other files. Like an include file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800|Changa+One' rel='stylesheet' type='text/css' > <!--should be before main.css and under normalize.css -->
+    <link rel="stylesheet" href="css/main.css"><!-- its important for main to come after css. We dont want to override mormalize.css -->
+    <link rel="stylesheet" href="css/responsive.css"> <!-- must be located under the main.css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- allow us to control the size of the window on mobile devices -->
+    <!-- the initial sace of our view port should be set to the device width of the respective screen -->
+  </head>
+  
+  <body>
+
+  <header> <!-- Part of the sites content and holds navagation -->
+    <a href="index" id="logo"><!--Hyperlink Reference -->
+  	 <h1>Michael Borado</h1>
+  	 <h2>Computer Engineer</h2>
+    </a>
+
+    <nav> <!-- Semantic statement to show where the navagation on the page is set -->
+      <ul> <!-- Ordered List -->
+        <li><a href="index" >Home</a></li>
+        <li><a href="Education">Education</a></li> <!-- List items -->
+        <li><a href="Resume">Resume</a></li>
+        <li><a href="Projects" class="selected">Projects</a></li>
+        <li><a href="About">About Me</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    </header>
+    <div id="wrapper">
+        <section> <!-- break up a page into logical sections -->
+        <h3>Projects</h3>
+        <p>
+        I will be posting past and current projects here.
+        </p>
+          <!-- <p>Bio, Pic, resume dl, and blog posts will go here </p> -->
+        </section> 
+        <footer> <!-- contains info that is not important enough to put onto the top of the page, deemphasizes info -->
+          <p> &copy; 2015 Michael Borado.</p>
+          <!-- The "href" link below uses an absolute link. The "src" link uses a relative link --> 
+          <a href="http://facebook.com/mmborado"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+          <!-- As a general rule we want to use relative links as much as possible. It will make the site more portable -->
+          <a href="http://twitter.com/mmborado"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        </footer>
+    </div>
+  </body>
+</html>

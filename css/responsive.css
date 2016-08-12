@@ -1,0 +1,91 @@
+/********************************************
+MEDIA QUEREY BREAKPOINTS
+*********************************************/
+@media screen and (min-width: 480px){ /*telling the browser that we want to target digital screens, as opposed to print media*/
+  
+  /********************************************
+  TWO COLUMN LAYOUT
+  *********************************************/
+  
+  #primary{
+    width:50%;
+    float:left;
+  }
+  #secondary{
+     width:40%;
+     float:right;
+  }
+ /*both media screen AND min width must be satisifed*/
+/*480px is about the size for most smart phones in landscape mode*/
+
+  /********************************************
+  3 * 5 = 15% for margins
+  100% - 15% = 85%
+  85% / 3% = 28.333333333%  hold of for rounding infinite or repeadint numbers
+  *********************************************/
+
+  /********************************************
+  PAGE: PORTFOLIO
+  *********************************************/
+
+  #gallery li{
+    width: 28.33333%;
+  }
+  /*pseudo class selector */
+  #gallery li:nth-child(4n){ /*being applied for the 4th list items inside the gallery element*/
+    clear: left;
+  }
+
+   /********************************************
+  PAGE: ABOUT
+  *********************************************/
+
+  .profile-photo{
+    float: left;
+    margin: 0 5% 80px 0; /* 80 px at the bottom just incase image wrapping occurs*/
+  }
+
+
+}
+
+
+
+/*encapsulate large tablets and normal sized desktops, which means we need to add a media query that cuts off just before those sizes, or at about 660 pixels.*/
+@media screen and (min-width: 660px){
+
+  /********************************************
+  HEADER
+  *********************************************/  
+  
+  nav{
+    background:none;
+    float:right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  
+  #logo {
+    float:left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+  
+  h1 {
+     font-size 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.825em;
+    margin-bottom:20px;
+  }
+  
+  header{
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px; 
+  }
+ 
+  
+}
