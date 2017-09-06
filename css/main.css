@@ -28,8 +28,30 @@ h3{
   
 }
 
+.h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
 
+.t-center {
+  text-align: center;
+}
 
+.message {
+  text-transform: uppercase;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  width:100%;
+}
+
+.resume-img {
+  margin: 0 1rem;
+}
 /********************************************
 Heading 
 *********************************************/
@@ -49,7 +71,7 @@ header{
 
 h1{
   font-family: 'Changa One', sans-serif;
-  margin: 15px, 0 ;
+  margin: 15px 0 0;
   font-size: 1.75em; /*Ems are a relative unit of measurement and they get their name from the capital letter M or the size of the letter m.*/
   /*1 em is relative to default font size. the .75 make it bigger*/
   font-weight: normal;
@@ -98,8 +120,7 @@ Footer
 footer {
   font-size: 0.75em;
   text-align: center;
-  padding-top: 50px;
-  color: #ccc;
+  color: #fff;
   clear:both; /*clears properties on both sides of this elemtns*/
 }
 
@@ -109,6 +130,19 @@ footer {
   margin: 0 5px;
 }
 
+.icon {
+  font-size: 1.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #333;
+  padding: 0.2rem 0;
+}
 /********************************************
 Page:Portfolio 
 *********************************************/
@@ -203,8 +237,8 @@ body {
 
 /* green header */
 header{
-  background: #6ab47b;
-  border-color: #599a68;
+  background: #333;
+  border-color: #333;
 }
 
 /* Logo Text */
@@ -215,17 +249,17 @@ h1,h2 { /*the comma is seperating selectors, used to apply same rules to differe
 
 /* nav background on mobile */
 nav{
-  background: #599a68;
+  background: #333;
 }
 
 /* links */
 a {
-  color: #6ab47b;
+  color: #777;
 }
 
 /* nav link */
 nav a, nav a:visited{ /* ":" creates a pseudo class in our css, visisted pesudo class*/
-  color: #fff;
+  color:  #fff;
   
 }
 
@@ -234,3 +268,4 @@ nav a.selected, nav a:hover { /*any anchor element that has the class "selected"
   color: #32673f;
   
 }
+

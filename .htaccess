@@ -1,0 +1,15 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+RewriteBase /public_html/
+RewriteOptions InheritDown
+
+#Alternate default index page
+DirectoryIndex index.php index.html
+
+#remove .html from URL
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.html [NC,L]
