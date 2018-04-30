@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
   
-  <head> 	<!-- The header is just to read metadata about the HTML Document, not the header of the webpage -->
-    <meta charset="utf-8"> <!--tells the browser how the webpage is formatted and how characters are used | universal character set transformation format 8-bit -->
-    <title>Michael Borado | Computer Engineer</title> <!--appears in the tab-->
-    <!--The following tag will link towards other files. Like an include file -->
+  <head>
+    <meta charset="utf-8">
+    <title>Michael Borado | Computer Engineer</title>\
     <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800|Changa+One' rel='stylesheet' type='text/css' > <!--should be before main.css and under normalize.css -->
     <script src="https://use.fontawesome.com/5510b851c5.js"></script>
 
-    <link rel="stylesheet" href="css/main.css"><!-- its important for main to come after css. We dont want to override mormalize.css -->
-    <link rel="stylesheet" href="css/responsive.css"> <!-- must be located under the main.css -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- allow us to control the size of the window on mobile devices -->
-    <!-- the initial sace of our view port should be set to the device width of the respective screen -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
   <body>
 
-  <header> <!-- Part of the sites content and holds navagation -->
-    <a href="/" id="logo"><!--Hyperlink Reference -->
+  <header> 
+    <a href="/" id="logo">
   	 <h1>Michael Borado</h1>
   	 <h2 class="h2"> Web Developer </h2>
     </a>
 
     </header>
     <div id="wrapper">
-        <section class="t-center"> <!-- break up a page into logical sections -->
+        <section class="t-center">
            <img src="img/michael.jpg" alt="Photograph of Michael Borado" class="profile-photo">
             <strong class="message" > Website currently under construction </strong>
         </section> 
@@ -35,13 +32,11 @@
               <img src="img/Adobe_PDF_file_icon_32x32.png" alt="Image of Adobe .pdf icon">
             </a>
         </section>
-        <footer class="footer"> <!-- contains info that is not important enough to put onto the top of the page, deemphasizes info -->
+        <footer class="footer">
           <p> &copy; 2017 Michael Borado.</p>
-          <!-- The "href" link below uses an absolute link. The "src" link uses a relative link --> 
           <a href="http://facebook.com/mmborado" target="_blank">
             <i class="fa fa-facebook-square icon"></i>
           </a>
-          <!-- As a general rule we want to use relative links as much as possible. It will make the site more portable -->
           <a href="http://twitter.com/mmborado" target="_blank">
             <i class="fa fa-twitter-square icon"></i>
           </a>
