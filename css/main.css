@@ -2,8 +2,14 @@
 GENERAL 
 *********************************************/
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper{
@@ -39,6 +45,7 @@ h3{
 
 .message {
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .resume {
@@ -84,8 +91,28 @@ h2{
   font-weight: normal; /*unbolds the text */
 }
 
+.content {
+  flex: 1 0 auto;
+}
 
+.txt-link {
+  border: none;
+  background: transparent;
+  color: #eee;
+  letter-spacing: 0.4px;
+}
+.txt-link:hover {
+  color: #ccc;
+}
 
+.resume {
+  margin-bottom: 1rem;
+  color: #333;
+}
+.resume-link {
+  display: block;
+  color: #c00;
+}
 /********************************************
 Navagation 
 *********************************************/
@@ -112,7 +139,6 @@ nav a {
 }
 
 
-
 /********************************************
 Footer 
 *********************************************/
@@ -135,10 +161,7 @@ footer {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  flex-shrink: 0;
   width: 100%;
   background-color: #333;
   padding: 0.2rem 0;
@@ -173,12 +196,15 @@ Page:Portfolio
 /********************************************
 PAGE: ABOUT 
 *********************************************/
-  
+ .main {
+   margin-bottom: 1rem;
+ } 
+
 .profile-photo{ /*image is default to display: in-line */
   display: block; /*Setting this to display block, will allow us to use auto margins to center the element on the page, as we've done here, similar to our wrapper div. */
   max-width: 200px;
   margin: 0 auto 30px;
-  border: 1px solid #333;
+  border: 2px solid #333;
   border-radius: 100%; /* allows us to add in borders around the image, causes the image to appear as a circle instead of a square*/
 }
 
@@ -272,17 +298,35 @@ nav a.selected, nav a:hover { /*any anchor element that has the class "selected"
 
 /********** Portfolio **********/
 .portfolio {
+  margin: 0 auto;
+  padding: 1rem 5%;
   background-color: #333;
   color: #fefefe;
+}
+.portfolio-header {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 50%;
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
   position: relative;
 }
 @media screen and (min-width: 64em) {
-  .grid-links {
+  .portfolio-grid {
     grid-template-columns: repeat(4, 25%);
   }
+}
+.portfolio-links {
+  display: flex;
+  justify-content: space-around;
+}
+.portfolio-item-link {
+  display: block;
+  max-height: 200px;
+  overflow: hidden;
 }
