@@ -6,7 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#wrapper{
+.wrapper{
   max-width:940px; /*we want the width to be no larger than 490pixels max*/
   margin: 0 auto; /*sets the margin around the wrapper or the spacing of the wrap*/
   /* first value is the top and the bottom, second value is the left and right margin */
@@ -176,8 +176,9 @@ PAGE: ABOUT
   
 .profile-photo{ /*image is default to display: in-line */
   display: block; /*Setting this to display block, will allow us to use auto margins to center the element on the page, as we've done here, similar to our wrapper div. */
-  max-width: 150px;
+  max-width: 200px;
   margin: 0 auto 30px;
+  border: 1px solid #333;
   border-radius: 100%; /* allows us to add in borders around the image, causes the image to appear as a circle instead of a square*/
 }
 
@@ -269,3 +270,19 @@ nav a.selected, nav a:hover { /*any anchor element that has the class "selected"
   
 }
 
+/********** Portfolio **********/
+.portfolio {
+  background-color: #333;
+  color: #fefefe;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 50%;
+  position: relative;
+}
+@media screen and (min-width: 64em) {
+  .grid-links {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
