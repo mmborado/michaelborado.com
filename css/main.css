@@ -15,10 +15,7 @@ body {
 
 .wrapper {
   max-width: 940px;
-  /*we want the width to be no larger than 490pixels max*/
   margin: 0 auto;
-  /*sets the margin around the wrapper or the spacing of the wrap*/
-  /* first value is the top and the bottom, second value is the left and right margin */
   padding: 0 5%;
 }
 
