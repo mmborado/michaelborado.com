@@ -8,6 +8,7 @@
 # Specific branch context: Deploys from this branch
 # will take these settings and override their
 # current ones.
-[context.dev] # 'dev' is a branch name
-  command = "echo 'dev'"
-  base = "dev"
+[context.branch-deploy]
+  command = "echo branch"
+[context.branch-deploy.environment]
+  NODE_ENV = "development"
