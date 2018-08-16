@@ -8,7 +8,7 @@
 # Specific branch context: Deploys from this branch
 # will take these settings and override their
 # current ones.
-[context.branch-deploy]
+[context.staging]
   command = "echo branch"
-[context.branch-deploy.environment]
+[context.staging.environment]
   NODE_ENV = "development"
