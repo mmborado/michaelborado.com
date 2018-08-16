@@ -2,9 +2,9 @@
   ID = "d88903eb-0bdd-4632-a1c0-cf828c2df91c"
 
 [Build]
-  Publish = ""
+  Publish = "."
   Functions = ""
-
+  command = "echo 'default context'"
 # Specific branch context: Deploys from this branch
 # will take these settings and override their
 # current ones.
