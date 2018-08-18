@@ -10,5 +10,6 @@
 # current ones.
 [context.staging]
   command = "echo branch"
+  base = "staging"
 [context.staging.environment]
   NODE_ENV = "development"
