@@ -16,15 +16,10 @@ body {
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  <<<<<<< HEAD=======/*sets the margin around the wrapper or the spacing of the wrap*/
-  /* first value is the top and the bottom, second value is the left and right margin */
-  >>>>>>>master padding: 0 5%;
 }
 
 a {
   text-decoration: none;
-  <<<<<<< HEAD=======/*removes underline on links*/
-  >>>>>>>master
 }
 
 img {
