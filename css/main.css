@@ -75,8 +75,6 @@ h1 {
   font-family: 'Changa One', sans-serif;
   margin: 15px 0 0;
   font-size: 1.75em;
-  /*Ems are a relative unit of measurement and they get their name from the capital letter M or the size of the letter m.*/
-  /*1 em is relative to default font size. the .75 make it bigger*/
   font-weight: normal;
   line-height: 0.8em;
 }
