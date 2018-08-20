@@ -69,8 +69,6 @@ header {
 #logo {
   text-align: center;
   margin: 0;
-  /*margin can take both keywords and numeric values
-  we dont want this element to have any spacing around its edges*/
 }
 
 h1 {
