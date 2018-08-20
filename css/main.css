@@ -19,8 +19,6 @@ body {
   /*sets the margin around the wrapper or the spacing of the wrap*/
   /* first value is the top and the bottom, second value is the left and right margin */
   padding: 0 5%;
-  /* first value represents top and bottom, second value is left and right.
-  5% of the total width of the wrapper element itself*/
 }
 
 a {
