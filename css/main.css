@@ -83,7 +83,7 @@ h1 {
 
 h2 {
   font-size: 0.75em;
-  margin -5px 0 0;
+  margin: -5px 0 0;
   /*first value is top, second value is left and right, third value is bottom */
   font-weight: normal;
   /*unbolds the text */
