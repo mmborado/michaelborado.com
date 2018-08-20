@@ -16,11 +16,15 @@ body {
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 5%;
+  <<<<<<< HEAD=======/*sets the margin around the wrapper or the spacing of the wrap*/
+  /* first value is the top and the bottom, second value is the left and right margin */
+  >>>>>>>master padding: 0 5%;
 }
 
 a {
   text-decoration: none;
+  <<<<<<< HEAD=======/*removes underline on links*/
+  >>>>>>>master
 }
 
 img {
@@ -71,8 +75,6 @@ header {
   text-align: center;
   /*align the text to the center, center is known as a keyword */
   margin: 0;
-  /*margin can take both keywords and numeric values
-  we dont want this element to have any spacing around its edges*/
 }
 
 h1 {

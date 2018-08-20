@@ -1,0 +1,19 @@
+{
+  "name": "michaelborado.com",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmborado/michaelborado.com.git"
+  },
+  "author": "Michael Borado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmborado/michaelborado.com/issues"
+  },
+  "homepage": "https://github.com/mmborado/michaelborado.com#readme"
+}
