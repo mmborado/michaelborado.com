@@ -16,6 +16,32 @@
 
 <body>
 
+
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '234495260580865',
+        cookie: true,
+        xfbml: true,
+        version: '3.1'
+      });
+
+      FB.AppEvents.logPageView();
+
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <header>
     <a href="/" id="logo" class="wrapper">
       <h1>Michael Borado</h1>
@@ -80,7 +106,8 @@
 
         <div class="portfolio-grid-item ">
           <a href="img/portfolio/perfectionwheels-wheel-desktop.jpg " class="portfolio-item-link js-popup ">
-            <img src="img/portfolio/perfectionwheels-wheel-desktop.jpg " alt="Perfectionwheels wheel detail page on desktop" class="portfolio-thumb ">
+            <img src="img/portfolio/perfectionwheels-wheel-desktop.jpg " alt="Perfectionwheels wheel detail page on desktop"
+              class="portfolio-thumb ">
           </a>
           <div class="portfolio-links ">
             <a href="img/portfolio/perfectionwheels-wheel-desktop.jpg " class="txt-link ">
