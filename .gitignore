@@ -1,2 +1,6 @@
 #FILES
 .DS_Store
+
+#DIRECTORIES
+/node_modules
+.cache
