@@ -1,0 +1,366 @@
+/********************************************
+GENERAL 
+*********************************************/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  /*sets the margin around the wrapper or the spacing of the wrap*/
+  /* first value is the top and the bottom, second value is the left and right margin */
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+  /*removes underline on links*/
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+.h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.message {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.resume-img {
+  margin: 0 1rem;
+}
+
+/********************************************
+Heading 
+*********************************************/
+
+header {
+  float: left;
+  /*used for the desktop layout*/
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  /*align the text to the center, center is known as a keyword */
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0 0;
+  font-size: 1.75em;
+  /*Ems are a relative unit of measurement and they get their name from the capital letter M or the size of the letter m.*/
+  /*1 em is relative to default font size. the .75 make it bigger*/
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin -5px 0 0;
+  /*first value is top, second value is left and right, third value is bottom */
+  font-weight: normal;
+  /*unbolds the text */
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.txt-link {
+  border: none;
+  background: transparent;
+  color: #eee;
+  letter-spacing: 0.4px;
+}
+
+.txt-link:hover {
+  color: #ccc;
+}
+
+.resume {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.resume-link {
+  display: block;
+  color: #c00;
+}
+
+/********************************************
+Navagation 
+*********************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  /*0 top and bottom, 10 px left and right*/
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+  /*makes it easier to click with a mouse or on target device*/
+}
+
+/********************************************
+Footer 
+*********************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  clear: both;
+  /*clears properties on both sides of this elemtns*/
+}
+
+.social-icon {
+  width: 20px;
+  /*about half the size of the original icons*/
+  height: 20px;
+  margin: 0 5px;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 0.2rem 0;
+}
+
+/********************************************
+Page:Portfolio 
+*********************************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*removes the list bullet styling*/
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  /*regardless of the size of the browser window, each image will only take 35% of the parent width*/
+  margin: 2.5%;
+  /*makes up the remaining 10% in the screen width, each image with have 2.5% margin on each side*/
+  /*background-color: #f5f5f5;*/
+  color: #bdc3c7;
+}
+
+#gallery li a p {
+  /*selecting the gallery then into the list item, then into the link, and selecting the paragraph element*/
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
+
+/********************************************
+PAGE: ABOUT 
+*********************************************/
+
+.main {
+  margin-bottom: 1rem;
+}
+
+.profile-photo {
+  /*image is default to display: in-line */
+  display: block;
+  /*Setting this to display block, will allow us to use auto margins to center the element on the page, as we've done here, similar to our wrapper div. */
+  max-width: 200px;
+  margin: 0 auto 30px;
+  border: 2px solid #333;
+  border-radius: 100%;
+  /* allows us to add in borders around the image, causes the image to appear as a circle instead of a square*/
+}
+
+/********************************************
+Page:Contact 
+*********************************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  /*each image will take up space*/
+  min-height: 20px;
+  /*set the min height to each image to 20px*/
+  background-repeat: no-repeat;
+  /*background images will repeat by default, this stops that*/
+  background-size: 20px 20px;
+  /*resize the background image to half*/
+  padding: 0 0 0 30px;
+  /*wants lots of extra space on the left side of the images*/
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+/********************************************
+Page:Contact 
+*********************************************/
+
+.resume_name {
+  margin-bottom: 10px;
+}
+
+/********************************************
+Colors 
+*********************************************/
+
+/* site body */
+
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+
+header {
+  background: #333;
+  border-color: #333;
+}
+
+/* Logo Text */
+
+h1,
+h2 {
+  /*the comma is seperating selectors, used to apply same rules to different selectors*/
+  color: #fff;
+  /*this is shorthand, 3 are used so each color will use the digit of the first color*/
+}
+
+/* nav background on mobile */
+
+nav {
+  background: #333;
+}
+
+/* links */
+
+a {
+  color: #777;
+}
+
+/* nav link */
+
+nav a,
+nav a:visited {
+  /* ":" creates a pseudo class in our css, visisted pesudo class*/
+  color: #fff;
+}
+
+/* selected nav link color */
+
+nav a.selected,
+nav a:hover {
+  /*any anchor element that has the class "selected" will receive the following style elements*/
+  color: #32673f;
+}
+
+/********** Portfolio **********/
+
+.portfolio {
+  margin: 0 auto;
+  padding: 1rem 5%;
+  background-color: #333;
+  color: #fefefe;
+}
+
+.portfolio-header {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 50%;
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+  position: relative;
+}
+
+@media screen and (min-width: 64em) {
+  .portfolio-grid {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-item-link {
+  display: block;
+  max-height: 200px;
+  overflow: hidden;
+}
