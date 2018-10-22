@@ -1,6 +1,7 @@
-#FILES
-.DS_Store
-
-#DIRECTORIES
-/node_modules
+# Project dependencies
 .cache
+node_modules
+yarn-error.log
+
+# Build directory
+.DS_Store
