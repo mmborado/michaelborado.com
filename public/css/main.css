@@ -155,7 +155,7 @@ footer {
   text-align: center;
   color: #fff;
   clear: both;
-  /*clears properties on both sides of this elemtns*/
+  border-top: 2px solid #fff;
 }
 
 .social-icon {
