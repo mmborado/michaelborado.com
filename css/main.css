@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -16,14 +16,11 @@ body {
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  /*sets the margin around the wrapper or the spacing of the wrap*/
-  /* first value is the top and the bottom, second value is the left and right margin */
   padding: 0 5%;
 }
 
 a {
   text-decoration: none;
-  /*removes underline on links*/
 }
 
 img {
@@ -64,7 +61,6 @@ Heading
 
 header {
   float: left;
-  /*used for the desktop layout*/
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
@@ -72,24 +68,20 @@ header {
 
 #logo {
   text-align: center;
-  /*align the text to the center, center is known as a keyword */
   margin: 0;
 }
 
 h1 {
-  font-family: 'Changa One', sans-serif;
+  font-family: "Changa One", sans-serif;
   margin: 15px 0 0;
   font-size: 1.75em;
-  /*Ems are a relative unit of measurement and they get their name from the capital letter M or the size of the letter m.*/
-  /*1 em is relative to default font size. the .75 make it bigger*/
   font-weight: normal;
   line-height: 0.8em;
 }
 
 h2 {
   font-size: 0.75em;
-  margin -5px 0 0;
-  /*first value is top, second value is left and right, third value is bottom */
+  margin: -5px 0 0;
   font-weight: normal;
   /*unbolds the text */
 }
@@ -250,15 +242,15 @@ Page:Contact
 }
 
 .contact-info li.phone a {
-  background-image: url('../img/phone.png');
+  background-image: url("../img/phone.png");
 }
 
 .contact-info li.mail a {
-  background-image: url('../img/mail.png');
+  background-image: url("../img/mail.png");
 }
 
 .contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+  background-image: url("../img/twitter.png");
 }
 
 /********************************************
